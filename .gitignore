@@ -1,0 +1,71 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# debug information files
+*.dwo
+
+# Build directory
+.temp/
+build/
+build-wsl/
+# Ad-hoc out-of-source build dirs (e.g. build-rel / build-dbg used for
+# timed before/after measurements and per-config canary builds).
+build-*/
+tmp_probe/
+!scripts/build/
+
+# CTest leftover when ctest is invoked from the repo root (e.g. inside
+# a CI step that cd's wrong) — these are throwaway run artifacts.
+Testing/
+
+# Test-scratch directories created by examples_runner + integrated_tests
+# during per-example compile/run cycles. Throwaway working dirs that
+# happen to land at repo-root when ctest runs without a build-dir cwd.
+test-scratch/
+
+# Python bytecode cache (e.g. tools/refresh_landing_log.py)
+__pycache__/
+*.pyc
+
+# Claude Code per-user local settings (allow-list, denied tools, etc.).
+# Project-wide skills under .claude/skills/ stay tracked.
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+#.plans/ -- Not for now, but will be used when first minimal implementation is done and we start working on the next steps.
